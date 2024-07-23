@@ -1,4 +1,4 @@
-import { taskFirst, taskNext } from "./0-constants.js";
+import { taskFirst, taskNext } from "../0-constants.js";
 
 test("tasks are correctly defined", () => {
   expect(`${taskFirst()} ${taskNext()}`).toEqual(
