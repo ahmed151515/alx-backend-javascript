@@ -1,9 +1,5 @@
-export default function appendToEachArrayValue(array, appendString) {
-  let newarr = [];
-  for (let value of array) {
-    value = appendString + value;
-    newarr.push(value);
-  }
+import appendToEachArrayValue from '../10-loops.js';
 
-  return newarr;
-}
+test('returns the correct array', () => {
+  expect(appendToEachArrayValue(['appended', 'fixed', 'displayed'], 'correctly-')).toEqual(['correctly-appended', 'correctly-fixed', 'correctly-displayed']);
+});
