@@ -27,8 +27,9 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
+    'jest/no-deprecated-functions': 'off',
   },
-  overrides:[
+  overrides: [
     {
       files: ['*.js'],
       excludedFiles: 'babel.config.js',
